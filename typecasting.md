@@ -390,13 +390,31 @@ console.log(resultEight);
 
 ## Boolean (true) to a string
 
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
+
 ![](https://miro.medium.com/v2/resize:fit:700/1*7T0BCEAa9Ch_kKHyM8zCDg.png)
 
 ## Boolean (false) to a string
 
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
+
 ![](https://miro.medium.com/v2/resize:fit:700/1*yDRASidprS4w9IFukYde1w.png)
 
 ## Date to a number
+
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
 
 ![](https://miro.medium.com/v2/resize:fit:700/1*5T2fnUHE5bRvCz95sg1-MA.png)
 
@@ -408,11 +426,23 @@ To convert a data type to a boolean we can use the method Boolean(). This conver
 
 The data types that confer to false using the Boolean() method are undefined, null, 0, NaN, ‘’ (an empty string without space).
 
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
+
 ![](https://miro.medium.com/v2/resize:fit:700/1*Wa3O2L_QRKP_FrU7ltY9TQ.png)
 
 ## The explicit typecasting to true
 
 Strings, numbers, and strings that have space convert o true if we use the method Boolean().
+
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
 
 ![](https://miro.medium.com/v2/resize:fit:700/1*sigsdmn-HvssCP6lHfbsLg.png)
 
@@ -424,11 +454,21 @@ There are several ways to convert arrays to objects. Let’s go through each of 
 
 A spread operator is an easy way to spread an array inside the object.
 
+```js
+// ✅ Result: 'NaN'
+```
+
 ![](https://miro.medium.com/v2/resize:fit:700/1*EeshEcMABLB0K42Ws-HyAg.png)
 
 ## A for loop
 
 Another way to create an object from an array is to loop through an array and create a key with the array item index and add an array item at a relevant position to the value.
+
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
 
 ![](https://miro.medium.com/v2/resize:fit:700/1*jHYoDp_XyJc7WQpnosZsjQ.png)
 
@@ -436,17 +476,35 @@ Another way to create an object from an array is to loop through an array and cr
 
 A very similar way will be looping through an array via forEach loop.
 
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
+
 ![](https://miro.medium.com/v2/resize:fit:700/1*VTUJC9WZ1G9ze9hbu-Wjzg.png)
 
 ## With the Object.assign()
 
 Next, you can use an object built-in method Object.assign() to merge an array with an object
 
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
+
 ![](https://miro.medium.com/v2/resize:fit:700/1*FxizKSFIUPKtNbhnrPoOdg.png)
 
 ## With the Object.fromEntries()
 
 Finally, you can use another object method Object.fromEntries(). However it will only work if you have a 2-dimensional array, otherwise, it will throw an error.
+
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
 
 ![](https://miro.medium.com/v2/resize:fit:700/1*p3zUSN13RNPMeyW8bz5jlw.png)
 
@@ -458,17 +516,35 @@ To convert objects to arrays there are several built-in methods that we can use.
 
 We used a similar method to convert arrays to objects and we can do the same by using entries. It will return a 2-d array with 3 arrays from each key-value pair.
 
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
+
 ![](https://miro.medium.com/v2/resize:fit:700/1*wFL_SJBl3vdkK1OgeeebPg.png)
 
 ## With the Object.keys()
 
 Next, we can use a keys method that retrieves only the keys of the objects.
 
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
+
 ![](https://miro.medium.com/v2/resize:fit:700/1*y0W1GqGDnn02rtROtYaoDw.png)
 
 ## With the Object.values()
 
 Finally, we can do the same but with the values of the object this time
+
+```js
+// ✅ Result: 'NaN'
+
+// ✅ Result: 'NaN'
+```
 
 ![](https://miro.medium.com/v2/resize:fit:700/1*ObG67_ugPJ3NForivuI4ew.png)
 
