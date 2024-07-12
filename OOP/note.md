@@ -164,3 +164,105 @@ Object-Oriented Programming (OOP) in JavaScript is a programming paradigm that r
 ### Summary
 
 OOP in JavaScript involves using classes and objects to create reusable and modular code. Key concepts include encapsulation, inheritance, polymorphism, and abstraction. These principles help in building robust and maintainable applications.
+
+<!-- Program1 -->
+
+# OOP Program
+
+Sure! Let's create a simple program using Object-Oriented Programming (OOP) concepts in JavaScript. We'll create a basic program to manage a library with books. This program will include classes for `Book` and `Library`, demonstrating encapsulation, inheritance, and polymorphism.
+
+### Step-by-Step Explanation
+
+1. **Class Definition**:
+
+    - Define a `Book` class to represent individual books.
+    - Define a `Library` class to manage a collection of books.
+
+2. **Encapsulation**:
+
+    - Use private properties to store book details.
+
+3. **Methods**:
+    - Add methods to the `Library` class to add books, remove books, and list all books.
+
+### Program
+
+```javascript
+// Define the Book class
+class Book {
+    constructor(title, author, isbn) {
+        this.title = title;
+        this.author = author;
+        this.isbn = isbn;
+    }
+
+    getDetails() {
+        return `${this.title} by ${this.author} (ISBN: ${this.isbn})`;
+    }
+}
+
+// Define the Library class
+class Library {
+    constructor() {
+        this.books = [];
+    }
+
+    addBook(book) {
+        this.books.push(book);
+        console.log(`Book added: ${book.getDetails()}`);
+    }
+
+    removeBook(isbn) {
+        this.books = this.books.filter((book) => book.isbn !== isbn);
+        console.log(`Book removed: ISBN ${isbn}`);
+    }
+
+    listBooks() {
+        console.log("Library contains:");
+        this.books.forEach((book) => {
+            console.log(book.getDetails());
+        });
+    }
+}
+
+// Create some book instances
+const book1 = new Book("The Great Gatsby", "F. Scott Fitzgerald", "1234567890");
+const book2 = new Book("1984", "George Orwell", "0987654321");
+
+// Create a library instance
+const library = new Library();
+
+// Add books to the library
+library.addBook(book1);
+library.addBook(book2);
+
+// List all books in the library
+library.listBooks();
+
+// Remove a book from the library by ISBN
+library.removeBook("1234567890");
+
+// List all books in the library after removal
+library.listBooks();
+```
+
+### Explanation
+
+1. **Book Class**:
+
+    - The `Book` class has a constructor that takes `title`, `author`, and `isbn` as arguments and initializes the respective properties.
+    - The `getDetails` method returns a string containing the book's details.
+
+2. **Library Class**:
+
+    - The `Library` class has a constructor that initializes an empty array `books` to store the book instances.
+    - The `addBook` method takes a `book` object, adds it to the `books` array, and logs a message.
+    - The `removeBook` method takes an `isbn`, filters out the book with the given `isbn` from the `books` array, and logs a message.
+    - The `listBooks` method iterates over the `books` array and logs the details of each book.
+
+3. **Usage**:
+    - Two book instances are created.
+    - A library instance is created.
+    - Books are added to the library, listed, and then one book is removed and the list is shown again to demonstrate the functionality.
+
+This example demonstrates basic OOP principles in JavaScript, including class creation, encapsulation of data within objects, and methods for interacting with the data.
